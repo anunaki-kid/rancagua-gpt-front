@@ -149,9 +149,9 @@
       }, 400);
 
       try {
-        const respuesta = await fetch("https://rancagua-gpt.onrender.com/preguntar", {
+        const respuesta = await fetch("https://rancagua-gpt-backend.onrender.com/preguntar", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ pregunta: msg })
         });
 
